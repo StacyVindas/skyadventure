@@ -10,7 +10,6 @@
 </head>
 <body>
 
-<!-- Navbar fija -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
     <a class="navbar-brand" href="#">SkyAdventure</a>
@@ -22,18 +21,34 @@
   </div>
 </nav>
 
-<!-- Carousel -->
-<div id="carouselExample" class="carousel slide mt-5">
+
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
   <div class="carousel-inner">
-    <div class="carousel-item active text-center bg-secondary text-white p-5">
-      <h1>Explora los cielos</h1>
-      <p>Vive una experiencia inolvidable</p>
-      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reservaModal">Reservar</button>
+    <div class="carousel-item active">
+      <img src="Assets/img/premium_photo-1666863909125-3a01f038e71f.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="Assets/img/Barbados_beach.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="Assets/img/The crater and the lake of the Poas volcano in Costa Rica.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
 
-<!-- Modal -->
 <div class="modal fade" id="reservaModal" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -52,9 +67,9 @@
   <div class="row">
     <div class="col-md-4">
       <div class="card">
-        <img src="Assets/img/The crater and the lake of the Poas volcano in Costa Rica.jpg" class="card-img-top" alt="Tour 1">
+        <img src="Assets/img/globo.jpg" class="card-img-top" alt="Tour 1">
         <div class="card-body">
-          <h5 class="card-title">Tour Volcán</h5>
+          <h5 class="card-title">Globo Aerostático</h5>
           <p class="card-text">Descubre vistas increíbles.</p>
           <button class="btn btn-primary">Ver más</button>
         </div>
@@ -62,20 +77,20 @@
     </div>
      <div class="col-md-4">
       <div class="card">
-        <img src="Assets/img/Barbados_beach.jpg" class="card-img-top" alt="Tour 1">
+        <img src="Assets/img/eli.jpg" class="card-img-top" alt="Tour 1">
         <div class="card-body">
-          <h5 class="card-title">Tour Playa</h5>
-          <p class="card-text">Descubre vistas increíbles.</p>
+          <h5 class="card-title">Helicóptero</h5>
+          <p class="card-text">Aventura Panorámica.</p>
           <button class="btn btn-primary">Ver más</button>
         </div>
       </div>
     </div>
      <div class="col-md-4">
       <div class="card">
-        <img src="Assets/img/premium_photo-1666863909125-3a01f038e71f.jpg" class="card-img-top" alt="Tour 1">
+        <img src="Assets/img/avi.jpg" class="card-img-top" alt="Tour 1">
         <div class="card-body">
-          <h5 class="card-title">Tour Montaña</h5>
-          <p class="card-text">Descubre vistas increíbles.</p>
+          <h5 class="card-title">Avioneta</h5>
+          <p class="card-text">vuela sobre CR.</p>
           <button class="btn btn-primary">Ver más</button>
         </div>
       </div>
@@ -132,25 +147,70 @@
 
   </div>
 </section>
-<form class="needs-validation" novalidate>
-  <div class="mb-3">
-    <label for="nombre" class="form-label">Nombre</label>
-    <input type="text" class="form-control" id="nombre" required>
-    <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+<section id="contacto" class="container my-5"></section>
+<form class="row g-3">
+  <div class="col-md-4">
+    <label for="validationServer01" class="form-label">First name</label>
+    <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
   </div>
-  <div class="mb-3">
-    <label for="correo" class="form-label">Correo electrónico</label>
-    <input type="email" class="form-control" id="correo" required>
-    <div class="invalid-feedback">Por favor ingresa un correo válido.</div>
+  <div class="col-md-4">
+    <label for="validationServer02" class="form-label">Last name</label>
+    <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
   </div>
-
-  <div class="mb-3">
-    <label for="mensaje" class="form-label">Mensaje</label>
-    <textarea class="form-control" id="mensaje" rows="3" required></textarea>
-    <div class="invalid-feedback">Por favor escribe un mensaje.</div>
+  <div class="col-md-4">
+    <label for="validationServerUsername" class="form-label">Username</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend3">@</span>
+      <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+      <div id="validationServerUsernameFeedback" class="invalid-feedback">
+        Please choose a username.
+      </div>
+    </div>
   </div>
-
-  <button class="btn btn-success" type="submit">Enviar</button>
+  <div class="col-md-6">
+    <label for="validationServer03" class="form-label">City</label>
+    <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+    <div id="validationServer03Feedback" class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationServer04" class="form-label">State</label>
+    <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+      <option selected disabled value="">Choose...</option>
+      <option>...</option>
+    </select>
+    <div id="validationServer04Feedback" class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationServer05" class="form-label">Zip</label>
+    <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+    <div id="validationServer05Feedback" class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+      <label class="form-check-label" for="invalidCheck3">
+        Agree to terms and conditions
+      </label>
+      <div id="invalidCheck3Feedback" class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
 </form>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

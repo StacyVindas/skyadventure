@@ -35,25 +35,6 @@ a:hover {
 }
 
 
-.carousel-item {
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(135deg, #ffcc80, #ffb74d);
-  color: white;
-  text-align: center;
-}
-
-.carousel-item h1 {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.carousel-item p {
-  font-size: 1.2rem;
-}
-
 
 .card {
   margin-bottom: 20px;
@@ -79,28 +60,6 @@ a:hover {
   color: white;
 }
 
-#contacto form {
-  max-width: 600px;
-  margin: 0 auto; 
-  background-color: #fff3e0;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-#contacto input, #contacto textarea {
-  border-radius: 8px;
-  border: 1px solid #ffb74d;
-}
-
-#contacto button {
-  background-color: #ff9800;
-  border: none;
-}
-
-#contacto button:hover {
-  background-color: #e65100;
-}
 
 footer {
   background-color: #ff7043;
@@ -116,3 +75,4 @@ footer a {
 footer a:hover {
   color: #ffd54f;
 }
+
