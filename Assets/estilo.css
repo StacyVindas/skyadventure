@@ -1,0 +1,118 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff3e0; 
+  color: #4e342e; 
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: #e65100; 
+}
+
+a {
+  color: #ef6c00;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff9800;
+}
+
+
+.navbar {
+  background-color: #ff7043; 
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.navbar .nav-link:hover {
+  color: #ffd54f !important; 
+}
+
+
+.carousel-item {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffcc80, #ffb74d);
+  color: white;
+  text-align: center;
+}
+
+.carousel-item h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.carousel-item p {
+  font-size: 1.2rem;
+}
+
+
+.card {
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card-title {
+  color: #e65100;
+}
+
+
+.accordion-button {
+  background-color: #ffcc80;
+  color: #4e342e;
+  font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ffb74d;
+  color: white;
+}
+
+#contacto form {
+  max-width: 600px;
+  margin: 0 auto; 
+  background-color: #fff3e0;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+#contacto input, #contacto textarea {
+  border-radius: 8px;
+  border: 1px solid #ffb74d;
+}
+
+#contacto button {
+  background-color: #ff9800;
+  border: none;
+}
+
+#contacto button:hover {
+  background-color: #e65100;
+}
+
+footer {
+  background-color: #ff7043;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #fff3e0;
+  margin: 0 10px;
+}
+footer a:hover {
+  color: #ffd54f;
+}
