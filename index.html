@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SkyAdventure</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar fija -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">SkyAdventure</a>
+    <div>
+      <a class="nav-link d-inline text-white" href="#tours">Tours</a>
+      <a class="nav-link d-inline text-white" href="#faq">FAQ</a>
+      <a class="nav-link d-inline text-white" href="#contacto">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Carousel -->
+<div id="carouselExample" class="carousel slide mt-5">
+  <div class="carousel-inner">
+    <div class="carousel-item active text-center bg-secondary text-white p-5">
+      <h1>Explora los cielos</h1>
+      <p>Vive una experiencia inolvidable</p>
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reservaModal">Reservar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="reservaModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">Reservar tour</h5></div>
+      <div class="modal-body">
+        <p>Reserva tu aventura con nosotros.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
